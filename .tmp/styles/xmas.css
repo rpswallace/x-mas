@@ -1,0 +1,8 @@
+.animations div img {
+  width: 500px;
+  height: 500px;
+  margin: 0 auto;
+  display: block; }
+
+.container {
+  background: url('../images/basketball_court1.jpg'); }

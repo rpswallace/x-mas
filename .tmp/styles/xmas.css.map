@@ -1,0 +1,10 @@
+{
+	"version": 3,
+	"file": "xmas.css",
+	"sources": [
+		"../../app/styles/xmas.scss"
+	],
+	"sourcesContent": [],
+	"mappings": "AACA,YAAY,IAAI;EAEV,OAAO;EACP,QAAQ;EACR,QAAQ;EACR,SAAS;;AAIf;EACE,YAAY",
+	"names": []
+}
