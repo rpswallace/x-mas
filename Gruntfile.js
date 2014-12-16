@@ -259,7 +259,7 @@ module.exports = function (grunt) {
             ignoreBasePath: '<%= config.app %>'
           },
           files: {
-            '<%= config.app %>/scripts/vendor/preload/filesmanifest.js': ['<%= config.app %>/images/gifs/*.gif']
+            '<%= config.app %>/scripts/vendor/preload/filesmanifest.js': ['<%= config.app %>/images/{,*/}*.{gif,jpeg,jpg,png}']
           }
         }
     },
