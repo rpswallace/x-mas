@@ -253,6 +253,17 @@ module.exports = function (grunt) {
       }
     },
 
+    preload_assets: {
+        my_target: {
+          options: {
+            ignoreBasePath: '<%= config.app %>'
+          },
+          files: {
+            '<%= config.app %>/scripts/vendor/preload/filesmanifest.js': ['<%= config.app %>/images/gifs/*.gif']
+          }
+        }
+    },
+
     svgmin: {
       dist: {
         files: [{
@@ -393,6 +404,7 @@ module.exports = function (grunt) {
     grunt.task.run([
       'clean:server',
       'wiredep',
+      'preload_assets',
       'concurrent:server',
       'autoprefixer',
       'connect:livereload',
