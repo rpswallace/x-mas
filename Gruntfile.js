@@ -56,6 +56,10 @@ module.exports = function (grunt) {
         files: ['<%= config.app %>/styles/{,*/}*.css'],
         tasks: ['newer:copy:styles', 'autoprefixer']
       },
+      preload:{
+        files: ['<%= config.app %>/images/{,*/}*.{gif,jpeg,jpg,png}'],
+        tasks: ['preload_assets']
+      },
       livereload: {
         options: {
           livereload: '<%= connect.options.livereload %>'
