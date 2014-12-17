@@ -58,7 +58,7 @@ module.exports = function (grunt) {
       },
       preload:{
         files: ['<%= config.app %>/images/{,*/}*.{gif,jpeg,jpg,png}'],
-        tasks: ['preload_assets']
+        tasks: ['preload_assets:app']
       },
       livereload: {
         options: {
@@ -258,12 +258,20 @@ module.exports = function (grunt) {
     },
 
     preload_assets: {
-        my_target: {
+        app: {
           options: {
             ignoreBasePath: '<%= config.app %>'
           },
           files: {
             '<%= config.app %>/scripts/vendor/preload/filesmanifest.js': ['<%= config.app %>/images/{,*/}*.{gif,jpeg,jpg,png}']
+          }
+        },
+        dist: {
+          options: {
+            ignoreBasePath: '<%= config.dist %>'
+          },
+          files: {
+            '<%= config.dist %>/scripts/vendor/preload/filesmanifest.js': ['<%= config.dist %>/images/{,*/}*.{gif,jpeg,jpg,png}']
           }
         }
     },
@@ -408,7 +416,7 @@ module.exports = function (grunt) {
     grunt.task.run([
       'clean:server',
       'wiredep',
-      'preload_assets',
+      'preload_assets:app',
       'concurrent:server',
       'autoprefixer',
       'connect:livereload',
@@ -449,7 +457,8 @@ module.exports = function (grunt) {
     'modernizr',
     'rev',
     'usemin',
-    'htmlmin'
+    'htmlmin',
+    'preload_assets:dist'
   ]);
 
   grunt.registerTask('default', [

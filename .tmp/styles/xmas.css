@@ -5,4 +5,9 @@
   display: block; }
 
 .container {
-  background: url('../images/basketball_court1.jpg'); }
+  background: url('../images/xmas-bg-dummy.png') no-repeat center; }
+
+h3 {
+  position: relative;
+  float: left;
+  left: 50%; }
