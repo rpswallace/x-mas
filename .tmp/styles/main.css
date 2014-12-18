@@ -4759,81 +4759,22 @@ button.close {
     display: none !important; }
  }
 
-.animations div img {
-  width: 500px;
-  height: 500px;
-  margin: 0 auto;
-  display: block; }
-
-.container {
-  background: url('../images/xmas-bg-dummy.png') no-repeat center; }
-
-h3 {
-  position: relative;
-  float: left;
-  left: 50%; }
-
-.browsehappy {
-  margin: 0.2em 0;
-  background: #ccc;
-  color: #000;
-  padding: 0.2em 0; }
-
-/* Space out content a bit */
 body {
   background: #d8ece2; }
-
-/* Everything but the jumbotron gets side spacing for mobile first views */
-.header, .marketing, .footer {
-  padding-left: 15px;
-  padding-right: 15px; }
-
-/* Custom page header */
-.header {
-  /* Make the masthead heading the same height as the navigation */ }
-  .header h3 {
-    margin-top: 0;
-    margin-bottom: 0;
-    line-height: 40px;
-    padding-bottom: 19px; }
-
-/* Custom page footer */
-.footer {
-  padding-top: 19px;
-  color: #777; }
-
-.container-narrow > hr {
-  margin: 30px 0; }
-
-/* Main marketing message and sign up button */
-.jumbotron {
-  text-align: center;
-  border-bottom: 1px solid #e5e5e5; }
-  .jumbotron .btn {
-    font-size: 21px;
-    padding: 14px 24px; }
-
-/* Supporting marketing content */
-.marketing {
-  margin: 40px 0; }
-  .marketing p + h4 {
-    margin-top: 28px; }
+  body .container {
+    background: url('../images/xmas-bg-dummy.png') no-repeat center; }
+    body .container .animations .welcome h3 {
+      position: relative;
+      float: left;
+      left: 50%; }
+    body .container .animations img {
+      width: 500px;
+      height: 500px;
+      margin: 0 auto;
+      display: block; }
 
 /* Responsive: Portrait tablets and up */
 @media screen and (max-width: 768px) {
   .container {
     min-width: 730px; }
-
-  /* Remove the padding we set earlier */
-  .header, .marketing, .footer {
-    padding-left: 0;
-    padding-right: 0; }
-
-  /* Space out the masthead */
-  .header {
-    margin-bottom: 30px; }
-
-  /* Remove the bottom border on the jumbotron for visual effect */
-  .jumbotron {
-    border-bottom: 0; }
  }
