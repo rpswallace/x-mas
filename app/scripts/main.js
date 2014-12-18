@@ -5,4 +5,4 @@ function getParameterByName(name) {
     return results == null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
 }
 
-$('.text-muted').text(getParameterByName('title'));
+$('.welcome h3').text(getParameterByName('title'));
