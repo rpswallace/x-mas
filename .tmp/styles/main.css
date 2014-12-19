@@ -4812,25 +4812,35 @@ body {
   background: #d8ece2; }
   body .container {
     background: url('../images/xmas-bg-dummy.png') no-repeat center; }
-    body .container .animations .welcome {
-      background: url('../images/gifs/xmas-dummy_01.gif') no-repeat center;
-      width: 500px;
-      height: 500px;
-      margin: 0 auto; }
-      body .container .animations .welcome h3 {
-        position: relative;
-        top: 170px;
-        font-size: 41px;
-        text-transform: uppercase;
-        color: #fff;
-        margin: auto auto;
-        text-align: center;
-        font-family: DIN-Medium; }
-    body .container .animations img {
-      width: 500px;
-      height: 500px;
-      margin: 0 auto;
-      display: block; }
+    body .container .animations {
+      display: none; }
+      body .container .animations .welcome {
+        background: url('../images/gifs/greeting.png') no-repeat center;
+        width: 500px;
+        height: 500px;
+        margin: 0 auto; }
+        body .container .animations .welcome h3 {
+          position: relative;
+          top: 170px;
+          font-size: 41px;
+          text-transform: uppercase;
+          color: #fff;
+          margin: auto auto;
+          text-align: center;
+          font-family: DIN-Medium; }
+      body .container .animations img {
+        width: 500px;
+        height: 500px;
+        margin: 0 auto;
+        display: block; }
+    body .container .preload {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      right: 50%;
+      bottom: 50%;
+      background-color: #fff;
+      z-index: 99; }
 
 /* Responsive: Portrait tablets and up */
 @media screen and (max-width: 768px) {

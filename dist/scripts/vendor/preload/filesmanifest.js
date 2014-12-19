@@ -7,8 +7,8 @@
 			    "type": "IMAGE"
 	        },
 			{
-				"id": "ImagesGifs2a9027cb.xmasDummy07",
-			    "src": "/images/gifs/2a9027cb.xmas-dummy_07.gif",
+				"id": "ImagesGifs120260af.goodbye",
+			    "src": "/images/gifs/120260af.goodbye.png",
 			    "type": "IMAGE"
 	        },
 			{
@@ -32,13 +32,13 @@
 			    "type": "IMAGE"
 	        },
 			{
-				"id": "ImagesGifsB42bb88b.xmasDummy01",
-			    "src": "/images/gifs/b42bb88b.xmas-dummy_01.gif",
+				"id": "ImagesGifsCe954ae9.xmasDummy02",
+			    "src": "/images/gifs/ce954ae9.xmas-dummy_02.gif",
 			    "type": "IMAGE"
 	        },
 			{
-				"id": "ImagesGifsCe954ae9.xmasDummy02",
-			    "src": "/images/gifs/ce954ae9.xmas-dummy_02.gif",
+				"id": "ImagesGifsE32e1085.greeting",
+			    "src": "/images/gifs/e32e1085.greeting.png",
 			    "type": "IMAGE"
 	        }
         ]

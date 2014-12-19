@@ -32,14 +32,16 @@
         <div class="welcome">
           <h3>x-mas</h3>
         </div>
-        <img src="images/gifs/xmas-dummy_02.gif" class="" alt="Responsive image">
-        <img src="images/gifs/xmas-dummy_03.gif" class="" alt="Responsive image">
-        <img src="images/gifs/xmas-dummy_04.gif" class="" alt="Responsive image">
-        <img src="images/gifs/xmas-dummy_05.gif" class="" alt="Responsive image">
-        <img src="images/gifs/xmas-dummy_06.gif" class="" alt="Responsive image">
-        <img src="images/gifs/xmas-dummy_07.gif" class="" alt="Responsive image">
+        <img src="images/gifs/xmas-dummy_02.gif" alt="Responsive image">
+        <img src="images/gifs/xmas-dummy_03.gif" alt="Responsive image">
+        <img src="images/gifs/xmas-dummy_04.gif" alt="Responsive image">
+        <img src="images/gifs/xmas-dummy_05.gif" alt="Responsive image">
+        <img src="images/gifs/xmas-dummy_06.gif" alt="Responsive image">
+        <img src="images/gifs/goodbye.png" alt="Responsive image">
 
       </div>
+
+      <img src="images/gifs/ajax-loader.gif" class="preload" alt="Responsive image">
 
     </div>
 
@@ -97,6 +99,11 @@
                 loader.addProgressListener(function(e) { 
                     // log which image completed 
                     // console.log('Image ' + e.resource.getName() + ' #' + e.resource.imageNumber + ' Loaded\r' + ' / ' + e.completedCount + ' / ' + e.totalCount); 
+                }); 
+                // log when all resources have completed 
+                loader.addCompletionListener(function(e) { 
+                    $('.preload').hide();
+                    $('.animations').show();
                 }); 
                 loader.start(); 
             }
