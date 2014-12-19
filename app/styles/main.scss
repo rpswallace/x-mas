@@ -4,6 +4,7 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 // endbower
 
 @import "variables";
+@import "fonts";
 
 body {
   background: $green-light;
@@ -12,10 +13,19 @@ body {
     background: url('../images/xmas-bg-dummy.png') no-repeat center;
     .animations {
       .welcome {
+        background: url('../images/gifs/xmas-dummy_01.gif') no-repeat center;
+        width: 500px;
+        height: 500px;
+        margin: 0 auto;
         h3 {
           position: relative;
-          float: left;
-          left: 50%;
+          top: 170px;
+          font-size: 41px;
+          text-transform: uppercase;
+          color: $white;
+          margin: auto auto;
+          text-align: center;
+          font-family: DIN-Medium;
         }
       }
       img {
