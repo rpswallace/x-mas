@@ -1,8 +1,8 @@
-function getParameterByName(name) {
-    name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
-    var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
-        results = regex.exec(location.search);
-    return results == null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
-}
+var GetURLParameter = function(sParam){
+	return decodeURI(
+		(RegExp(sParam + '=' + '(.+?)(&|$)').exec(location.search)||[,null])[1]
+	);
+};
 
-$('.welcome h3').text(getParameterByName('title'));
+$('.welcome h3').text(GetURLParameter('name'));
+
