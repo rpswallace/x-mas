@@ -2,13 +2,8 @@
 	"filesManifest": {
 		"files": [
 			{
-				"id": "ImagesGifsAjaxLoader",
-			    "src": "/images/gifs/ajax-loader.gif",
-			    "type": "IMAGE"
-	        },
-			{
-				"id": "ImagesGifsGoodbye",
-			    "src": "/images/gifs/goodbye.png",
+				"id": "ImagesAjaxLoader",
+			    "src": "/images/ajax-loader.gif",
 			    "type": "IMAGE"
 	        },
 			{
@@ -17,33 +12,33 @@
 			    "type": "IMAGE"
 	        },
 			{
-				"id": "ImagesGifsXmasDummy02",
-			    "src": "/images/gifs/xmas-dummy_02.gif",
+				"id": "ImagesGifsScene1",
+			    "src": "/images/gifs/scene1.gif",
 			    "type": "IMAGE"
 	        },
 			{
-				"id": "ImagesGifsXmasDummy03",
-			    "src": "/images/gifs/xmas-dummy_03.gif",
+				"id": "ImagesGifsScene2",
+			    "src": "/images/gifs/scene2.gif",
 			    "type": "IMAGE"
 	        },
 			{
-				"id": "ImagesGifsXmasDummy04",
-			    "src": "/images/gifs/xmas-dummy_04.gif",
+				"id": "ImagesGifsScene3",
+			    "src": "/images/gifs/scene3.gif",
 			    "type": "IMAGE"
 	        },
 			{
-				"id": "ImagesGifsXmasDummy05",
-			    "src": "/images/gifs/xmas-dummy_05.gif",
+				"id": "ImagesGifsScene4",
+			    "src": "/images/gifs/scene4.gif",
 			    "type": "IMAGE"
 	        },
 			{
-				"id": "ImagesGifsXmasDummy06",
-			    "src": "/images/gifs/xmas-dummy_06.gif",
+				"id": "ImagesGifsScene5",
+			    "src": "/images/gifs/scene5.gif",
 			    "type": "IMAGE"
 	        },
 			{
-				"id": "ImagesXmasBgDummy",
-			    "src": "/images/xmas-bg-dummy.png",
+				"id": "ImagesXmasBg",
+			    "src": "/images/xmas-bg.png",
 			    "type": "IMAGE"
 	        }
         ]
